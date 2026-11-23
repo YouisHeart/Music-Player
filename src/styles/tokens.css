@@ -1,0 +1,71 @@
+:root {
+  color-scheme: dark;
+
+  /* Typography */
+  --font-sans: "HarmonyOS Sans SC", "MiSans", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-display: "Orbitron", var(--font-sans);
+  --font-mono: "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+
+  /* Surfaces */
+  --bg-0: #03060f;
+  --bg-1: #050b17;
+  --panel-bg: rgba(10, 20, 38, 0.58);
+  --panel-bg-strong: rgba(7, 14, 28, 0.88);
+  --panel-blur: 26px;
+  --line: rgba(126, 172, 255, 0.13);
+  --line-strong: rgba(144, 190, 255, 0.24);
+
+  /* Text */
+  --text-1: #edf4ff;
+  --text-2: rgba(203, 220, 248, 0.66);
+  --text-3: rgba(166, 192, 232, 0.42);
+  --text-4: rgba(150, 176, 216, 0.28);
+
+  /* Neon accent (live theme values are written by useTheme) */
+  --neon: #4f8dff;
+  --neon-rgb: 79, 141, 255;
+  --neon-2: #a855f7;
+  --neon-2-rgb: 168, 85, 247;
+  --cyan: #5fe3ff;
+  --success: #3ddc97;
+  --warning: #ffcf5c;
+  --danger: #ff5d7a;
+  --gradient-neon: linear-gradient(135deg, var(--neon), var(--neon-2));
+
+  /* Shape */
+  --radius-xl: 22px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 9px;
+  --titlebar-h: 64px;
+  --sidebar-w: 236px;
+  --queue-w: 368px;
+
+  /* Shadow */
+  --shadow-window: 0 40px 120px rgba(0, 0, 0, 0.6);
+  --shadow-float: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --shadow-neon: 0 0 28px rgba(var(--neon-rgb), 0.32);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Runtime-adjustable */
+  --wall-blur: 10px;
+  --glass-blur: 26px;
+}
+
+@media (max-width: 1360px) {
+  :root {
+    --sidebar-w: 218px;
+    --queue-w: 342px;
+  }
+}
+
+@media (max-width: 1180px) {
+  :root {
+    --sidebar-w: 88px;
+    --queue-w: 320px;
+  }
+}
